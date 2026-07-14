@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chiara & Mattia</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin:0;
+    background:#faf7f2;
+    text-align:center;
+    font-family:'Cormorant Garamond', serif;
+    color:#333;
+}
+
+.container {
+    max-width:500px;
+    margin:50px auto;
+    padding:30px;
+}
+
+h1 {
+    font-family:'Great Vibes', cursive;
+    font-size:70px;
+    font-weight:400;
+}
+
+h2 {
+    font-size:30px;
+}
+
+.box {
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px #ddd;
+}
+
+.iban {
+    font-size:20px;
+    font-weight:bold;
+    word-break:break-all;
+}
+
+button {
+    background:#b89b5e;
+    color:white;
+    border:0;
+    padding:12px 25px;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>Chiara & Mattia</h1>
+
+<h2>11 settembre 2027</h2>
+
+
+<div class="box">
+
+<p>
+Per chi desiderasse contribuire al nostro viaggio,
+riportiamo qui le coordinate bancarie:
+</p>
+
+
+<h3>Intestatari</h3>
+
+<p>
+Chiara XXXXX<br>
+Mattia XXXXX
+</p>
+
+
+<h3>IBAN</h3>
+
+<p id="iban" class="iban">
+IT00 X000 0000 0000 0000 0000 000
+</p>
+
+
+<button onclick="copiaIBAN()">
+Copia IBAN
+</button>
+
+
+<h3>Causale</h3>
+
+<p>
+Regalo matrimonio Chiara e Mattia
+</p>
+
+
+</div>
+
+</div>
+
+
+<script>
+
+function copiaIBAN(){
+
+let iban=document.getElementById("iban").innerText;
+
+navigator.clipboard.writeText(iban);
+
+alert("IBAN copiato!");
+
+}
+
+</script>
+
+
+</body>
+
+</html>
