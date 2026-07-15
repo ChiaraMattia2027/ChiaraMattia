@@ -127,20 +127,29 @@ Regalo matrimonio Chiara e Mattia
 
 
 <script>
+function copiaIBAN() {
+    let iban = document.getElementById("iban").innerText.replace(/\s+/g, ''); // Rimuove spazi vuoti
+    navigator.clipboard.writeText(iban).then(() => {
+        let btn = document.querySelector("button");
+        btn.innerText = "Copiato!";
+        setTimeout(() => { btn.innerText = "Copia IBAN"; }, 2000);
+    });
+//function copiaIBAN(){
 
-function copiaIBAN(){
+//let iban=document.getElementById("iban").innerText;
 
-let iban=document.getElementById("iban").innerText;
+//navigator.clipboard.writeText(iban);
 
-navigator.clipboard.writeText(iban);
-
-alert("IBAN copiato!");
+//alert("IBAN copiato!");
 
 }
 
 </script>
 
 
+}
+
+    
 </body>
 
 </html>
