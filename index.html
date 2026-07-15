@@ -54,15 +54,21 @@ h3 {
     font-weight:bold;
     word-break:break-all;
 }
+
+.text1 {
+    font-family: 'Libre Bodoni', serif;
+    font-size:20px;
+}    
+    
 .text2 {
-    font-family: "Sacramento", cursive;
+    font-family: 'Sacramento', cursive;
     font-size:30px;
     /*font-weight:bold;*/
    /*word-break:break-all;*/
 }
 
 .text3 {
-    font-family: "Sacramento", cursive;
+    font-family: 'Sacramento', cursive;
     font-size:50px;
     /*font-weight:bold;*/
    /*word-break:break-all;*/
@@ -98,10 +104,11 @@ riportiamo qui le coordinate bancarie:
 </p>
 
 <div class="box">
-
+/*DA QUI IN POI SIAMO DENTRO AL BOX BIANCO
+    
 <h3>Intestatario</h3>
 
-<p>
+<p class="text1">
 Chiara Manna<br>
 
 </p>
@@ -121,7 +128,7 @@ Copia IBAN
 
 <h3>Causale</h3>
 
-<p>
+<p class="text1">
 Regalo matrimonio Chiara e Mattia
 </p>
 
@@ -130,6 +137,7 @@ Regalo matrimonio Chiara e Mattia
 
 </div>
 
+/*DA QUI SIAMO FUORI DAL BOX BIANCO
 
 <script>
 function copiaIBAN() {
@@ -139,16 +147,6 @@ function copiaIBAN() {
         btn.innerText = "Copiato!";
         setTimeout(() => { btn.innerText = "Copia IBAN"; }, 2000);
     });
-//function copiaIBAN(){
-
-//let iban=document.getElementById("iban").innerText;
-
-//navigator.clipboard.writeText(iban);
-
-//alert("IBAN copiato!");
-
-//}
-
 </script>
 
 <p class="text3">
