@@ -74,6 +74,14 @@ h3 {
     /*font-weight:bold;*/
    /*word-break:break-all;*/
 }
+
+.grazie-container {
+    display: flex;       /* Affianca gli elementi */
+    align-items: center; /* Li allinea verticalmente al centro */
+    justify-content: center; /* Li mantiene centrati nella pagina */
+    gap: 15px;           /* Spazio tra la scritta e la foto */
+    margin-top: -20px;   /* Regola la distanza dal blocco sopra */
+}
     
 button {
     font-family:'Libre Bodoni', serif;
@@ -85,6 +93,8 @@ button {
     font-size:16px;
     cursor:pointer;
 }
+
+
 
 </style>
 
@@ -141,7 +151,7 @@ Regalo matrimonio Chiara e Mattia
 </div>
 
 </div>
-<img src="grazie.png" alt="Seconda foto" style="width: 10%; border-radius: 15px; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;">
+<!--<img src="grazie.png" alt="Seconda foto" style="width: 10%; border-radius: 15px; margin-top: 20px; display: block; margin-left: auto; margin-right: auto;">-->
 
 
 <script>
@@ -155,9 +165,13 @@ function copiaIBAN() {
 }    
 </script>
 
-<p class="text3">
+<!--<p class="text3">
 Grazie di cuore ❤️
-</p>
+</p>-->
+<div class="grazie-container">
+    <p class="text3">Grazie di cuore</p>
+    <img src="cuore.png" alt="Foto" style="width: 50%; border-radius: 10px;">
+</div>
     
 </body>
 
