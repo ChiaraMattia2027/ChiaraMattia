@@ -76,11 +76,16 @@ h3 {
 }
 
 .grazie-container {
-    display: flex;       /* Affianca gli elementi */
-    align-items: center; /* Li allinea verticalmente al centro */
-    justify-content: center; /* Li mantiene centrati nella pagina */
-    gap: 15px;           /* Spazio tra la scritta e la foto */
-    margin-top: -20px;   /* Regola la distanza dal blocco sopra */
+    display: flex;          /* Attiva il layout orizzontale */
+    align-items: center;    /* Centra verticalmente gli elementi rispetto alla loro altezza */
+    justify-content: center; /* Centra tutto il gruppo rispetto alla pagina */
+    gap: 15px;              /* Distanza tra scritta e foto */
+    margin-top: -20px;
+}
+
+/* Assicurati che l'immagine non sia troppo alta rispetto al testo */
+.grazie-container img {
+    vertical-align: middle;
 }
     
 button {
