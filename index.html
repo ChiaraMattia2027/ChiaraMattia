@@ -76,14 +76,31 @@ h3 {
 }
 
 .grazie-container {
-    display: inline-flex;
-    align-items: center;
+    display: flex;         /* Mantiene gli elementi sulla stessa riga */
+    align-items: center;   /* Tenta l'allineamento standard */
     justify-content: center;
     gap: 10px;
+    margin-top: -20px;
+    /* Assicurati che non ci siano padding o margini sul contenitore che spingano in basso */
+    padding: 0;
 }
 
+/* Stile per il paragrafo del testo */
+.grazie-container .text3 {
+    margin: 0;
+    /* Opzionale: se il font ha un'altezza di riga eccessiva, riducila */
+    line-height: 1;
+}
+
+/* STILE CRUCIALE PER IL CUORE: SOLLEVAMENTO MANUALE */
 .grazie-container img {
-    margin: 0; /* Rimuove margini predefiniti che potrebbero disallinearlo */
+    width: 60px; /* Mantieni una dimensione fissa e leggibile (es. 60px) */
+    border-radius: 10px;
+    /* Solleva l'immagine verso l'alto finché non è centrata a occhio */
+    margin-bottom: 10px; /* Prova questo valore: più è alto, più scende. Più è basso (negativo), più sale. */
+    
+    /* Alternativa più diretta: margin-top negativo */
+    /* margin-top: -15px; */ /* Usa questo se preferisci. Inizia da -10px e aumenta (es. -20px) finché non è centrato. */
 }
     
 button {
